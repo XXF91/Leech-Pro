@@ -50,12 +50,7 @@ for imp in ["TG_BOT_TOKEN", "APP_ID", "API_HASH", "OWNER_ID", "AUTH_CHANNEL"]:
         LOGGER.critical(f"Oh...{imp} is missing from config.env ... fill that")
         
 
-# The Telegram API things
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7397532645:AAH7R46hDIQ95j9-5kyVgySCa-A6cHQy6vE")
-APP_ID = int(os.environ.get("APP_ID", "13384432"))
-API_HASH = os.environ.get("API_HASH","ea9db4503ed7088b788e06dfd818e00e")
-OWNER_ID = int(os.environ.get("OWNER_ID", "6169288210"))
-
+# 
 # Get these values from my.telegram.org
 # to store the channel ID who are authorized to use the bot
 AUTH_CHANNEL = [int(x) for x in os.environ.get("AUTH_CHANNEL", "2134274870").split()]
